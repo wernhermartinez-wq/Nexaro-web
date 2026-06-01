@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXARO — Agencia IA | AI Agency | KI-Agentur</title>
+  <meta name="description" content="NEXARO: Automatizaciones IA, páginas web y apps para pequeñas empresas y autónomos." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ══════════════════════════════ NAVBAR ══════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="NEXARO" class="logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#por-que" data-i18n="nav.why">Por qué Nexaro</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#contacto" class="nav-cta" data-i18n="nav.contact">Contactar</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" data-i18n="nav.services">Servicios</a>
+    <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="#por-que" data-i18n="nav.why">Por qué Nexaro</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <a href="#contacto" data-i18n="nav.contact">Contactar</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+<section id="hero">
+  <canvas id="starsCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero.badge">Agencia de Inteligencia Artificial</div>
+    <h1 class="hero-title">
+      <span data-i18n="hero.title1">Automatiza tu negocio.</span><br/>
+      <span class="gradient-text" data-i18n="hero.title2">Escala con IA.</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">
+      Transformamos pequeñas empresas y autónomos con automatizaciones inteligentes,
+      páginas web de alto impacto y apps a medida.
+    </p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-primary" data-i18n="hero.cta1">Solicitar propuesta</a>
+      <a href="#portfolio" class="btn-ghost" data-i18n="hero.cta2">Ver proyectos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">+40h</span><span class="stat-label" data-i18n="hero.stat1">ahorradas/semana</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label" data-i18n="hero.stat2">proyectos activos</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">&lt;24h</span><span class="stat-label" data-i18n="hero.stat3">propuesta lista</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SERVICIOS ══════════════════════════════ -->
+<section id="servicios">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="services.title">Soluciones que impulsan tu negocio</h2>
+      <p data-i18n="services.sub">Combinamos IA de última generación con diseño profesional para darte ventaja competitiva real.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00a8ff" stroke-width="1.5">
+            <path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><path d="M22 2 12 12"/><circle cx="22" cy="2" r="2" fill="#00a8ff" stroke="none"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s1.title">Automatizaciones IA</h3>
+        <p data-i18n="s1.desc">Agentes de voz, chatbots, gestión de citas y flujos automáticos que trabajan 24/7 por ti. Elimina tareas repetitivas y céntrate en crecer.</p>
+        <ul class="service-list">
+          <li data-i18n="s1.f1">Agentes de voz con IA</li>
+          <li data-i18n="s1.f2">Gestión de citas por WhatsApp</li>
+          <li data-i18n="s1.f3">Integración con CRM y calendarios</li>
+          <li data-i18n="s1.f4">Flujos n8n / Make / Zapier</li>
+        </ul>
+        <a href="#contacto" class="service-link" data-i18n="s1.cta">Quiero automatizar →</a>
+      </div>
+
+      <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+        <div class="featured-badge" data-i18n="s2.badge">Más solicitado</div>
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00a8ff" stroke-width="1.5">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s2.title">Páginas Web</h3>
+        <p data-i18n="s2.desc">Webs profesionales, rápidas y optimizadas para convertir visitantes en clientes. Diseño moderno con SEO y analítica incluidos.</p>
+        <ul class="service-list">
+          <li data-i18n="s2.f1">Diseño a medida</li>
+          <li data-i18n="s2.f2">SEO técnico incluido</li>
+          <li data-i18n="s2.f3">Multiidioma</li>
+          <li data-i18n="s2.f4">Gestión de contenido simple</li>
+        </ul>
+        <a href="#contacto" class="service-link" data-i18n="s2.cta">Quiero mi web →</a>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00a8ff" stroke-width="1.5">
+            <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s3.title">Apps a Medida</h3>
+        <p data-i18n="s3.desc">Aplicaciones móviles y web personalizadas para tu sector. Desde copilots médicos hasta gestión de operaciones logísticas.</p>
+        <ul class="service-list">
+          <li data-i18n="s3.f1">Apps iOS & Android</li>
+          <li data-i18n="s3.f2">Panel de control personalizado</li>
+          <li data-i18n="s3.f3">IA integrada</li>
+          <li data-i18n="s3.f4">Soporte y mantenimiento</li>
+        </ul>
+        <a href="#contacto" class="service-link" data-i18n="s3.cta">Quiero mi app →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ PORTFOLIO ══════════════════════════════ -->
+<section id="portfolio">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="portfolio.tag">Proyectos reales</span>
+      <h2 data-i18n="portfolio.title">Lo que ya hemos construido</h2>
+      <p data-i18n="portfolio.sub">Cada proyecto resuelve un problema real. Aquí están los cinco en los que estamos trabajando.</p>
+    </div>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card" data-aos="fade-up">
+        <div class="portfolio-visual medical">
+          <div class="portfolio-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <div class="portfolio-glow"></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="p1.cat">App · IA Médica</span>
+          <h3 data-i18n="p1.title">Copilot Médico</h3>
+          <p data-i18n="p1.desc">Asistente IA para profesionales de la salud. Sugiere diagnósticos diferenciales, resume historiales y genera informes automáticos en tiempo real.</p>
+          <div class="portfolio-tags">
+            <span>LLM</span><span>NLP</span><span>Salud</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-visual logistics">
+          <div class="portfolio-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M1 3h15v13H1z"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <div class="portfolio-glow"></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="p2.cat">App · Logística</span>
+          <h3 data-i18n="p2.title">Gestión de Repartos</h3>
+          <p data-i18n="p2.desc">App móvil para empresas de reparto. Optimiza rutas, asigna pedidos automáticamente y ofrece tracking en tiempo real para clientes.</p>
+          <div class="portfolio-tags">
+            <span>Maps API</span><span>Real-time</span><span>Logística</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card wide" data-aos="fade-up" data-aos-delay="200">
+        <div class="portfolio-visual whatsapp flow-visual">
+          <div class="flow-diagram">
+            <!-- Node 1: WhatsApp -->
+            <div class="flow-node node-wa">
+              <div class="node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <span>WhatsApp</span>
+              <div class="node-pulse"></div>
+            </div>
+            <!-- Connector 1 -->
+            <div class="flow-connector">
+              <div class="flow-line">
+                <div class="flow-dot"></div>
+              </div>
+              <span class="conn-label">Mensaje</span>
+            </div>
+            <!-- Node 2: IA -->
+            <div class="flow-node node-ai">
+              <div class="node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00a8ff" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3m-3.27-6.73-2.12 2.12M6.39 17.61l-2.12 2.12m0-13.46 2.12 2.12m9.22 9.22 2.12 2.12"/>
+                </svg>
+              </div>
+              <span>Agente IA</span>
+              <div class="node-pulse ai"></div>
+            </div>
+            <!-- Connector 2 -->
+            <div class="flow-connector">
+              <div class="flow-line">
+                <div class="flow-dot delay2"></div>
+              </div>
+              <span class="conn-label">Procesa</span>
+            </div>
+            <!-- Node 3: Calendar -->
+            <div class="flow-node node-cal">
+              <div class="node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+              </div>
+              <span>Calendario</span>
+              <div class="node-pulse cal"></div>
+            </div>
+            <!-- Connector 3 -->
+            <div class="flow-connector">
+              <div class="flow-line">
+                <div class="flow-dot delay3"></div>
+              </div>
+              <span class="conn-label">Confirma</span>
+            </div>
+            <!-- Node 4: Reply -->
+            <div class="flow-node node-reply">
+              <div class="node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <span>Respuesta</span>
+              <div class="node-pulse reply"></div>
+            </div>
+          </div>
+          <!-- Floating message bubble -->
+          <div class="flow-message">
+            <div class="fm-bubble user">Quiero cita el martes a las 10h</div>
+            <div class="fm-bubble bot">✓ Cita confirmada para el martes 10:00. ¡Te esperamos!</div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="p3.cat">Automatización · WhatsApp</span>
+          <h3 data-i18n="p3.title">Gestor de Citas IA</h3>
+          <p data-i18n="p3.desc">Bot inteligente que gestiona reservas 24/7 por WhatsApp. Confirma, recuerda y reagenda citas sin intervención humana. Integrado con Google Calendar.</p>
+          <div class="portfolio-tags">
+            <span>WhatsApp API</span><span>IA</span><span>Automatización</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card wide" data-aos="fade-up" data-aos-delay="300">
+        <div class="portfolio-visual voice">
+          <div class="portfolio-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <div class="portfolio-glow"></div>
+          <div class="voice-waves">
+            <div class="wave"></div><div class="wave"></div><div class="wave"></div><div class="wave"></div><div class="wave"></div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="p4.cat">Automatización · Voz IA</span>
+          <h3 data-i18n="p4.title">Agente de Atención por Voz</h3>
+          <p data-i18n="p4.desc">Agente telefónico con IA que atiende llamadas, responde preguntas frecuentes, toma datos y escala al humano solo cuando es necesario. Disponible 24/7 sin coste de personal.</p>
+          <div class="portfolio-tags">
+            <span>Voice AI</span><span>STT/TTS</span><span>LLM</span><span>Atención al cliente</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card wide" data-aos="fade-up" data-aos-delay="400">
+        <div class="portfolio-visual chatbot">
+          <div class="portfolio-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>
+              <circle cx="8.5" cy="10" r="1" fill="white" stroke="none"/>
+              <circle cx="12" cy="10" r="1" fill="white" stroke="none"/>
+              <circle cx="15.5" cy="10" r="1" fill="white" stroke="none"/>
+            </svg>
+          </div>
+          <div class="portfolio-glow"></div>
+          <div class="chat-bubbles">
+            <div class="bubble b1">¿Cuáles son vuestros precios?</div>
+            <div class="bubble b2 bot">¡Hola! Tenemos planes desde 99€/mes...</div>
+            <div class="bubble b3">¿Hacéis envíos a Europa?</div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="p5.cat">Web + IA · Chatbot</span>
+          <h3 data-i18n="p5.title">Web con Chatbot Inteligente</h3>
+          <p data-i18n="p5.desc">Páginas web profesionales con un chatbot IA entrenado con toda la información de tu negocio: productos, precios, horarios, FAQs y más. Atiende a tus clientes al instante, 24/7, sin coste de personal. El bot aprende de tus documentos y responde como un experto de tu empresa.</p>
+          <div class="portfolio-tags">
+            <span>RAG / IA</span><span>Chatbot</span><span>Web</span><span>Atención 24/7</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ POR QUÉ NEXARO ══════════════════════════════ -->
+<section id="por-que">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="why.title">¿Por qué elegir NEXARO?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-aos="fade-up">
+        <div class="why-num">01</div>
+        <h3 data-i18n="w1.title">IA real, no promesas</h3>
+        <p data-i18n="w1.desc">Implementamos modelos de lenguaje y automatizaciones que ya funcionan en producción, no demos de laboratorio.</p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-num">02</div>
+        <h3 data-i18n="w2.title">Tamaño justo</h3>
+        <p data-i18n="w2.desc">Trabajamos con pymes y autónomos. Entendemos tus limitaciones de presupuesto y tiempo, y lo reflejamos en soluciones simples y efectivas.</p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-num">03</div>
+        <h3 data-i18n="w3.title">Entrega rápida</h3>
+        <p data-i18n="w3.desc">De la primera llamada a la primera versión en producción en menos de 4 semanas. Sin burocracia, sin sorpresas.</p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-num">04</div>
+        <h3 data-i18n="w4.title">Soporte continuo</h3>
+        <p data-i18n="w4.desc">No desaparecemos tras la entrega. Monitorizamos, mejoramos y ampliamos tus herramientas conforme crece tu negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ TESTIMONIOS ══════════════════════════════ -->
+<section id="testimonios">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="test.title">Lo que dicen quienes ya automatizaron</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-aos="fade-up">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="t1.text">"El agente de citas por WhatsApp nos ahorró contratar a una recepcionista. Gestiona todo solo y nunca falla. En dos semanas ya amortizamos la inversión."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar av1">CM</div>
+          <div>
+            <strong data-i18n="t1.name">Carlos M.</strong>
+            <span data-i18n="t1.role">Clínica Dental · Madrid</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="t2.text">"Nexaro nos entregó la app de repartos antes de lo prometido. El panel de control es exactamente lo que necesitábamos. Muy profesionales."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar av2">LR</div>
+          <div>
+            <strong data-i18n="t2.name">Laura R.</strong>
+            <span data-i18n="t2.role">Empresa de Logística · Barcelona</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="t3.text">"El agente de voz atiende el 80% de mis llamadas solo. Mis clientes no notan la diferencia y yo puedo enfocarme en lo que realmente importa."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar av3">AP</div>
+          <div>
+            <strong data-i18n="t3.name">Alejandro P.</strong>
+            <span data-i18n="t3.role">Asesoría Fiscal · Valencia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ FAQ ══════════════════════════════ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="faq.title">Todo lo que necesitas saber</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q1">¿Cuánto cuesta un proyecto típico?</button>
+        <div class="faq-a"><p data-i18n="faq.a1">Depende del alcance. Una automatización básica parte de 500€. Una web profesional desde 800€. Las apps a medida desde 2.500€. Siempre hacemos una propuesta personalizada sin compromiso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q2">¿Cuánto tiempo tarda en estar listo?</button>
+        <div class="faq-a"><p data-i18n="faq.a2">Las automatizaciones: 1-2 semanas. Webs: 2-3 semanas. Apps: 4-8 semanas según complejidad. Trabajamos con entregas incrementales para que veas resultados rápido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q3">¿Necesito conocimientos técnicos para usar lo que construís?</button>
+        <div class="faq-a"><p data-i18n="faq.a3">No. Diseñamos todo para que lo puedas usar sin formación técnica. Además, incluimos sesión de onboarding y documentación en vídeo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q4">¿Ofrecéis mantenimiento después de la entrega?</button>
+        <div class="faq-a"><p data-i18n="faq.a4">Sí. Tenemos planes de mantenimiento mensual desde 99€/mes que incluyen actualizaciones, monitorización y soporte prioritario.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q5">¿Trabajáis con empresas fuera de España?</button>
+        <div class="faq-a"><p data-i18n="faq.a5">Por supuesto. Trabajamos 100% en remoto y tenemos clientes en España, Alemania y Latinoamérica. Nuestra web y servicios están disponibles en español, inglés y alemán.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ CONTACTO ══════════════════════════════ -->
+<section id="contacto">
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <span class="section-tag" data-i18n="contact.tag">Hablemos</span>
+        <h2 data-i18n="contact.title">¿Listo para automatizar tu negocio?</h2>
+        <p data-i18n="contact.sub">Cuéntanos tu proyecto. En menos de 24h tendrás una propuesta personalizada sin compromiso.</p>
+        <div class="contact-features">
+          <div class="cf-item"><span class="cf-icon">✓</span><span data-i18n="contact.f1">Consulta inicial gratuita</span></div>
+          <div class="cf-item"><span class="cf-icon">✓</span><span data-i18n="contact.f2">Propuesta en 24h</span></div>
+          <div class="cf-item"><span class="cf-icon">✓</span><span data-i18n="contact.f3">Sin permanencia</span></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="form.name">Nombre</label>
+            <input type="text" name="nombre" required placeholder="Tu nombre" data-i18n-ph="form.namePH" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.email">Email</label>
+            <input type="email" name="email" required placeholder="tu@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form.service">Servicio de interés</label>
+          <select name="servicio">
+            <option value="" data-i18n="form.select">Selecciona un servicio</option>
+            <option value="automatizacion" data-i18n="form.opt1">Automatización IA</option>
+            <option value="web" data-i18n="form.opt2">Página Web</option>
+            <option value="app" data-i18n="form.opt3">App a Medida</option>
+            <option value="todo" data-i18n="form.opt4">Varios servicios</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form.msg">Cuéntanos tu proyecto</label>
+          <textarea name="mensaje" rows="4" required placeholder="Describe brevemente qué necesitas..." data-i18n-ph="form.msgPH"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" data-i18n="form.send">Enviar mensaje</button>
+        <p class="form-legal" data-i18n="form.legal">Al enviar aceptas nuestra política de privacidad. No spam, nunca.</p>
+        <div class="form-success" id="formSuccess">
+          <span>✓</span> <span data-i18n="form.success">¡Mensaje enviado! Te contactamos en menos de 24h.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="NEXARO" class="logo-img" />
+      </a>
+      <p data-i18n="footer.tagline">Automatizamos el presente para que construyas el futuro.</p>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer.services">Servicios</h4>
+      <a href="#servicios" data-i18n="footer.s1">Automatizaciones IA</a>
+      <a href="#servicios" data-i18n="footer.s2">Páginas Web</a>
+      <a href="#servicios" data-i18n="footer.s3">Apps a Medida</a>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer.company">Empresa</h4>
+      <a href="#portfolio" data-i18n="footer.portfolio">Portfolio</a>
+      <a href="#faq" data-i18n="footer.faq">FAQ</a>
+      <a href="#contacto" data-i18n="footer.contact">Contacto</a>
+    </div>
+    <div class="footer-contact-col">
+      <h4 data-i18n="footer.contactTitle">Contacto</h4>
+      <a href="mailto:hola@nexaro.ai">hola@nexaro.ai</a>
+      <div class="lang-switcher footer-lang">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer.copy">© 2025 NEXARO. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
