@@ -1296,6 +1296,50 @@ footer {
   .lang-switcher { display: none; }
 }
 
+/* ══════════════ ICON ANIMATIONS ══════════════ */
+
+/* Automatizaciones IA — glow pulse */
+.service-card:nth-child(1) .service-icon {
+  animation: iconGlow 2.4s ease-in-out infinite;
+}
+@keyframes iconGlow {
+  0%, 100% { box-shadow: 0 0 8px rgba(0,168,255,0.2), 0 0 0 1px rgba(0,168,255,0.2); }
+  50%       { box-shadow: 0 0 24px rgba(0,168,255,0.7), 0 0 0 1px rgba(0,168,255,0.6); border-color: rgba(0,168,255,0.8); }
+}
+
+/* Páginas Web — float up/down */
+.service-card:nth-child(2) .service-icon {
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+/* Apps a Medida — float up/down (offset) */
+.service-card:nth-child(3) .service-icon {
+  animation: iconFloat 3.4s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-7px); }
+}
+
+/* Copilot Médico — heartbeat pulse */
+.portfolio-card:nth-child(1) .portfolio-icon-wrap {
+  animation: iconPulse 1.8s ease-in-out infinite;
+}
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); }
+  30%       { transform: scale(1.12); }
+  60%       { transform: scale(1); }
+  80%       { transform: scale(1.06); }
+}
+
+/* Gestión de Repartos — float */
+.portfolio-card:nth-child(2) .portfolio-icon-wrap {
+  animation: iconFloat 3.2s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
